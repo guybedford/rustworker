@@ -1,0 +1,13 @@
+[package]
+name = "rustworker"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { path = "./wasm-bindgen" }
+wasm-bindgen-futures = { path = "./wasm-bindgen/crates/futures" }
+js-sys = { path = "./wasm-bindgen/crates/js-sys" }
+web-sys = { path = "./wasm-bindgen/crates/web-sys", features = ["Response", "Request", "Url"] }
