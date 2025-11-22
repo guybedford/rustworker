@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -euo pipefail
 
 cd wasm-bindgen && cargo build -p wasm-bindgen-cli
